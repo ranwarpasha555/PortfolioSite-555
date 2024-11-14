@@ -1,0 +1,149 @@
+
+.bdy{
+  background-color: azure;   
+}
+
+.navig{
+  display: flex;
+  align-items: center;
+  margin: 6px;
+  height: 60px;
+  border: 1px solid rgb(177, 176, 176);
+  box-shadow: 1px 1px rgb(107, 106, 106) 
+}
+.navig>div{
+  background-color: rgb(8, 8, 9);
+  color: white;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.move-box{
+  display: flex;
+  background-color: rgb(209, 241, 214);
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 9px;
+  margin-bottom: 8px;
+  line-height: 10px;
+  
+}
+
+
+hr{
+  border: 1px solid rgb(23, 23, 23)
+}
+
+.movewords{
+    color: rgb(255, 30, 0);
+    position: relative;
+    animation: move-words 10s linear infinite; 
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif; 
+    height: 30px; 
+    line-height: 26px;
+    padding: 5px;
+}
+
+@media screen and (max-width:374px){
+  .movewords{
+    font-size:  15px;
+    word-spacing: 10px;
+    line-height: 26pt;
+
+  }
+}
+@keyframes move-words {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.content>p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin: 2px;
+  word-spacing: 1px;
+  line-height: 26pt;
+
+}
+
+@media screen and (max-width:374px) {
+  .content>p{
+    
+   font-size: 10px;
+   font-family: 'Times New Roman', Times, serif;
+  }
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+h2{
+  text-align: center;
+  margin-top: -1px;
+  color: rgb(31, 31, 32);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* first row */
+.skill-cont{
+  position: relative;
+  animation: move-box 20s linear infinite;
+  height: 130px;
+  width: 216px;
+  border: 2px solid rgb(158, 158, 157);
+  margin: 2px;
+  flex-grow: 1px;
+}
+@keyframes move-box{
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+
+/* second row */
+
+img{
+  height: 100px;
+  width: 100%;
+}
+h4{
+  text-align: center;
+  margin-top: 10px;
+  line-height: 5px;
+  
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  position: bottom;
+  margin-top: 60px;
+  background-color: aquamarine;
+ 
+}
